@@ -1,0 +1,20 @@
+[package]
+name = "rust-nyc-meetup-2022-04-27"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+clap = { version = "3", features = ["derive"] }
+crossbeam-channel = "0.5"
+futures = "0.3"
+serde_json = "1.0"
+tantivy = "0.17"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+[[bin]]
+name = "rust-nyc"
+path = "src/main.rs"
